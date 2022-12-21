@@ -21,7 +21,7 @@ function App() {
 			<ul>
 				{/* Imprimimos la tabla con todos los datos en el html */}
 				{categories.map((category, i) => {
-					return <GifGrid />;
+					return <GifGrid key={i} category={category} />;
 				})}
 			</ul>
 		</div>
